@@ -1,0 +1,11 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=FreeCAD
+Comment=bcclsn
+Exec=FreeCAD
+Icon=/home/bcclsn/.icons/icons/freecad_icon.png
+Terminal=false
+Type=Application
+Categories=Utility;Application;
+Name[it_IT]=FreeCAD

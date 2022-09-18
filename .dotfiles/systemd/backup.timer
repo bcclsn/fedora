@@ -1,0 +1,10 @@
+[Unit]
+Description=Backup Giornaliero
+
+[Timer]
+OnCalendar=daily
+Unit=backup.service
+Persistent=true
+
+[Install]
+WantedBy=timers.target
