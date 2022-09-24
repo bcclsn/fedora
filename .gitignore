@@ -12,6 +12,7 @@ Immagini/
 .icons/
 .lesshst
 .local/
+.log/
 .mozilla/
 .oh-my-zsh/
 .pki/
@@ -19,6 +20,6 @@ Immagini/
 .var/
 .viminfo
 .wget-hsts
-.zcompdump-dreamspark-5.8.1
-.zcompdump-dreamspark-5.8.1.zwc
+.zcompdump-bcclsn-5.8.1
+.zcompdump-bcclsn-5.8.1.zwc
 .zsh_history
