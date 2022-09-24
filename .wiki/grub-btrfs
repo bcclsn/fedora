@@ -1,0 +1,9 @@
+# 24-Sep-2022
+# v1.0
+
+1. clone grub-btrfs and run "make install"
+2. edit 41_snapshots-btrfs (from su) and change row 72 from:
+   grub_directory=${GRUB_BTRFS_GRUB_DIRNAME:-"/boot/grub"}
+   to: grub_directory=${GRUB_BTRFS_GRUB_DIRNAME:-"/boot/grub2"}
+3. edit /etc/default/grub-btrfs using custom file in .dotfiles
+   (uncomment all rows with /boot/grub2
