@@ -42,8 +42,8 @@ GRUB_DISABLE_RECOVERY=true
 # Uncomment and set to the desired menu colors.  Used by normal and wallpaper
 # modes only.  Entries specified as foreground/background.
 ## CONFIG 1
-GRUB_COLOR_NORMAL="red/black"
-GRUB_COLOR_HIGHLIGHT="white/black"
+MENU_COLOR_NORMAL="red/black"
+MENU_COLOR_HIGHLIGHT="white/black"
 
 # Uncomment one of them for the gfx desired, a image background or a gfxtheme
 # GRUB_FONT="/boot/grub/fonts/unicode.pf2"
