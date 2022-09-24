@@ -1,10 +1,10 @@
 ##
-## GRUB Config - bcclsn v1.2
+## GRUB Config - bcclsn v1.3
 ##
 
 GRUB_DEFAULT=0
 GRUB_TIMEOUT=1
-GRUB_DISTRIBUTOR="Arch"
+GRUB_DISTRIBUTOR="$(sed 's, release .*$,,g' /etc/system-release)"
 GRUB_CMDLINE_LINUX_DEFAULT="loglevel=6 quite"
 GRUB_CMDLINE_LINUX=""
 
@@ -42,17 +42,12 @@ GRUB_DISABLE_RECOVERY=true
 # Uncomment and set to the desired menu colors.  Used by normal and wallpaper
 # modes only.  Entries specified as foreground/background.
 ## CONFIG 1
-#GRUB_COLOR_NORMAL="light-grey/black"
-#GRUB_COLOR_HIGHLIGHT="yellow/black"
-## CONFIG 2
 GRUB_COLOR_NORMAL="red/black"
 GRUB_COLOR_HIGHLIGHT="white/black"
 
 # Uncomment one of them for the gfx desired, a image background or a gfxtheme
-#GRUB_THEME="/path/to/gfxtheme"
-GRUB_FONT="/boot/grub/fonts/unicode.pf2"
-#GRUB_BACKGROUND="/home/bcclsn/.dotfiles/wallpaper/wallhaven-lmxmxy.png"
-GRUB_BACKGROUND="/home/bcclsn/.dotfiles/wallpaper/wallhaven-45881.png"
+# GRUB_FONT="/boot/grub/fonts/unicode.pf2"
+# GRUB_BACKGROUND="/home/bcclsn/.dotfiles/wallpaper/wallhaven-45881.png"
 
 # Uncomment to get a beep at GRUB start
 #GRUB_INIT_TUNE="480 440 1"
