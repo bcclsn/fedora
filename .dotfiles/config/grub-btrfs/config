@@ -104,7 +104,8 @@ GRUB_BTRFS_GRUB_DIRNAME="/boot/grub2"
 # For example, on Fedora : "/sbin/grub2-mkconfig"
 # You can use only name or full path.
 # Default: grub-mkconfig
-GRUB_BTRFS_MKCONFIG=/usr/bin/grub2-mkconfig
+#GRUB_BTRFS_MKCONFIG=/usr/bin/grub2-mkconfig
+GRUB_BTRFS_MKCONFIG=/sbin/grub2-mkconfig
 
 # Name of grub-script-check command, use by "grub-btrfs"
 # Might be 'grub2-script-check' on some systems (Fedora ...)

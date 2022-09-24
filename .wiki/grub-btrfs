@@ -2,8 +2,20 @@
 # v1.0
 
 1. clone grub-btrfs and run "make install"
-2. edit 41_snapshots-btrfs (from su) and change row 72 from:
-   grub_directory=${GRUB_BTRFS_GRUB_DIRNAME:-"/boot/grub"}
-   to: grub_directory=${GRUB_BTRFS_GRUB_DIRNAME:-"/boot/grub2"}
-3. edit /etc/default/grub-btrfs using custom file in .dotfiles
-   (uncomment all rows with /boot/grub2
+2. edit /etc/default/grub-btrfs using custom file in .dotfiles
+   (uncomment all rows with /boot/grub2)
+
+The intention is that you don't need to change the file /etc/grub.d/41_snapshots-btrfs since that is overwritten when an update is installed..
+Instead you change the values in /etc/default/grub-btrfs/config. The ${GRUB_BTRFS_GRUB_DIRNAME:-"/boot/grub"} means: Use the value in GRUB_BTRFS_GRUB_DIRNAME unless it's not defined, in this case then use /boot/grub
+The reason is that 41_snapshots-btrfs can get overwritten with an update, and you would loose your changes where /etc/default/grub-btrfs is usually protected by some mechanism like Gentoos dispatch-conf for example.
+
+To tell Fedora users they have to configure some things it says
+
+# Location of the folder containing the "grub.cfg" file.
+# # Use by grub-btrfs to save the file "grub-btrfs.cfg".
+# # Might be grub2 on some systems.
+# # For example, on Fedora with EFI : "/boot/efi/EFI/fedora"
+# # Default: "/boot/grub"
+# #GRUB_BTRFS_GRUB_DIRNAME="/boot/grub2"
+
+in /etc/default/grub-btrfs. Maybe it would be better to have another hint for that in the readme. I am not a Fedora user, but if you make a few lines what needs to be changed for them, I would add them. But in this case, please try to use /etc/default/grub-btrfs whereever possible.
