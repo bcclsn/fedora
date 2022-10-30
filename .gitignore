@@ -16,9 +16,11 @@ Immagini/
 .mozilla/
 .oh-my-zsh/
 .pki/
+.python_history
 .ssh/
 .var/
 .viminfo
+.vscode/
 .wget-hsts
 .zcompdump-bcclsn-5.8.1
 .zcompdump-bcclsn-5.8.1.zwc
