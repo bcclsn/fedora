@@ -5,9 +5,9 @@ mount -t btrfs -o compress=zstd:3,subvol=/ /dev/sda2 /mnt/btrfs
 
 # remove the snapshot #
 cd /mnt/btrfs/snap-root
-btrfs subvolume delete "$(ls -1 | head -n -3)"
+btrfs subvolume delete "$(ls -1 | head -n -2)"
 cd /mnt/btrfs/snap-home
-btrfs subvolume delete "$(ls -1 | head -n -3)"
+btrfs subvolume delete "$(ls -1 | head -n -2)"
 cd ~/
 
 # update grup.cfg (grub-btrfs) #
