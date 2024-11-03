@@ -4,8 +4,8 @@ export LANG=it_IT.UTF-8
 export EDITOR='vim'
 
 HIST_STAMPS="mm/dd/yyyy"
-#ZSH_THEME="bcclsn-v2"
-ZSH_THEME="robbyrussell"
+ZSH_THEME="bcclsn-v2"
+#ZSH_THEME="robbyrussell"
 ENABLE_CORRECTION="true"
 plugins=(dirhistory web-search zsh-syntax-highlighting) 
 
